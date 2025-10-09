@@ -1,7 +1,5 @@
 ---
 title: Regulations
-description: {{STATE_NAME}} and national regulatory news.
-permalink: /regulations/
 layout: page
 ---
 
