@@ -4,6 +4,34 @@ All notable changes to the DOGE Network Ruby Template will be documented in this
 
 State sites can use this to understand what changed between versions and decide which updates to adopt.
 
+## [0.3.1] - 2025-10-09
+
+### 🐛 Bug Fixes
+
+#### Tweet Embed Component
+- **`_includes/tweet.html`** - Fixed JavaScript selector issue
+  - Changed from `document.querySelector('[data-align]')` to `spinner.parentElement`
+  - Ensures proper element selection for alignment functionality
+  - Improves reliability of tweet embed positioning
+
+#### Documentation Formatting
+- **`index.md`** - Improved comment syntax
+  - Changed HTML comments to Jekyll Liquid comments
+  - Better integration with Jekyll processing
+  - More consistent with template standards
+
+### 🔄 Changed
+
+### 📊 File Changes Summary
+
+Files modified:
+- `README.md` - Version badge update
+- `_includes/tweet.html` - JavaScript selector fix
+- `index.md` - Comment syntax improvement
+- `CHANGELOG.md` - this file
+
+---
+
 ## [0.3.0] - 2025-10-06
 
 ### Enhanced media updates
@@ -174,6 +202,7 @@ This template follows semantic versioning:
 ### What This Means for State Sites
 
 - **0.2.0 → 0.3.0**: New features added, review and adopt what you want
+- **0.3.0 → 0.3.1**: Bug fixes, safe to merge immediately
 - **0.2.0 → 1.0.0**: Breaking changes, careful migration required
 - **0.2.0 → 0.2.1**: Bug fixes, safe to merge immediately
 
